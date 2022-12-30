@@ -12,10 +12,12 @@ function ProjectDisplay() {
     <div className="project">
       <h1> {project.name}</h1>
       <img src={project.image} />
-      <p>
-        <b>Skills: test</b> {project.skills}
-      </p>
-      <GitHubIcon />
+      <h2>my contribution</h2>
+      <ul>
+        {project.contribution.map((i) => {
+            return <li>{i}</li>
+          })}
+        </ul>
     </div>
   );
 }
