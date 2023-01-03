@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
+import DownloadIcon from '@mui/icons-material/Download';
 import "../css/Navbar.css"
 
 
@@ -27,6 +28,7 @@ function Navbar() {
         <div className='links'>
             <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>
+            <button class="cvButton"><DownloadIcon style={{color:'#13a89e', magin:'auto', padding:'0px'}}/>CV</button>
         </div>
         </div>
   )
