@@ -1,5 +1,6 @@
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
+
 export const TimelineList = [
     {
         date: "2017-2020",
@@ -25,5 +26,6 @@ export const TimelineList = [
         icon:<SchoolIcon/>,
         color:"rgb(19, 168, 158)",
       },
+      
       
 ];
