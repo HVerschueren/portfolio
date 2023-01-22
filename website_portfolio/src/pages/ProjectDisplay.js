@@ -11,6 +11,7 @@ function ProjectDisplay() {
   return (
     <div className="project">
       <h1> {project.name}</h1>
+      <p>{project.date}</p>
       <div className="imageDiv">
         <img src={project.image} />
       </div>
