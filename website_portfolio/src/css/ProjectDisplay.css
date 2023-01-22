@@ -20,6 +20,8 @@
   .imageDiv{
     height: 330px;
     width: 330px;
+    display: flex;
+    justify-content: center;
   }
   .project img {
     max-width: 100%;
