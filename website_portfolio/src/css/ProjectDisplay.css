@@ -1,6 +1,6 @@
 .project {
     width: 100%;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
   }
   
   .project h1 {
-    margin-top: 80px;
+    margin-top: 30px;
     color: #13a89e;
     font-size: 35px;
   }
@@ -28,8 +28,8 @@
   }
   
   .project p {
-    font-size: 40px;
-    color: #13a89e;
+    font-size: 1rem;
+    max-width: 1000px;
   }
   
   .project svg {
@@ -39,7 +39,7 @@
 
   @media only screen and (min-width: 600px){
     .imageDiv{
-      height:600px;
+      height:auto;
       width: 600px;
     }
 
@@ -47,7 +47,7 @@
 
   @media only screen and (min-width: 1000px){
     .imageDiv{
-      height:800px;
+      height:auto;
       width: 800px;
     }
 
