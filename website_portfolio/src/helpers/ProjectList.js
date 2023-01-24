@@ -13,6 +13,8 @@ import Project5 from "../images/laptopkast.jpg";
 import Project5_1 from "../images/stopcontact.jpg";
 import Project6 from "../images/enigma3.jpg";
 import Project6_2 from "../images/enigma4.jpg"
+import Project6_3 from "../images/enigma5.jpg"
+import Project6_4 from "../images/enigma6.jpg"
 import Project7 from "../images/PowerBI.jpg";
 import Project7_1 from "../images/kippen.jpg";
 import Project7_2 from "../images/kippen2.jpg";
@@ -178,10 +180,13 @@ export const ProjectList = [
         name: "enigma",
         image: [
           {
-            picture: Project6,
+            picture: Project6_3,
             pText: "testText1"
           },{
             picture: Project6_2,
+            pText: "testText2"
+          },{
+            picture: Project6_4,
             pText: "testText2"
           }
         ],
