@@ -23,6 +23,10 @@
     width: 330px;
     display: flex;
     justify-content: center;
+    
+  }
+  .smallScreenImage{
+    margin: auto;
   }
   .project img {
     max-width: 100%;
