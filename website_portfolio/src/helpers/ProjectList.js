@@ -14,11 +14,14 @@ import Project5_1 from "../images/stopcontact.jpg";
 import Project6 from "../images/enigma3.jpg";
 import Project6_2 from "../images/enigma4.jpg"
 import Project7 from "../images/PowerBI.jpg";
+import Project7_1 from "../images/kippen.jpg";
+import Project7_2 from "../images/kippen2.jpg";
 import Project8 from "../images/theBigC.jpg";
 import Project8_1 from "../images/theBigC2.jpg";
 import Project8_2 from "../images/theBigC3.jpg";
 import Project9 from "../images/Azure.jpg";
 import Project9_1 from "../images/powerBIazure.jpg";
+import Project9_2 from "../images/AzureSchema.jpg";
 
 
 
@@ -40,6 +43,7 @@ export const ProjectList = [
         context: "In my final semester at KdG I had to make a Final project and at the end of the year present it to an external jury. When it became clear that we were very free to choose our final project, I quickly knew that I wanted to do something audio-oriented. In terms of subjects at school, I found the audio courses the most interesting. The only limitation we had was that it could only last fifteen minutes. I have been a fan of the audio books from “Het Geluidshuis” since I was nine years old and thought it would be a really fun challenge to make one myself. Their audiobooks aren’t just someone reading the book, but with different actors for each voice, music and sound effects.",
         date: "feb. 2020 - jun. 2020",
         assignment: "Make a final project",
+        team:"This was a solo project.",
         projectBody: [
               {
                 heading: "PREPARATION",
@@ -74,6 +78,7 @@ export const ProjectList = [
         context: "This project was made for the course IoT Advanced in my second year at Thomas More. We had five weeks to work on it.",
         date: "oct. 2021 - dec. 2021",
         assignment: "Build an automated parking with license plate recognition and website to monitor.",
+        team:"A team of five people.",
         projectBody: [
           {
             heading: "THE PROCESS",
@@ -96,6 +101,7 @@ export const ProjectList = [
         context: "This project was made for the course Systems Engineering & Analysis in my second year at Thomas More. We had a whole semester to work on it. Around the date of the project a lot of things were changing considering energy in Belgium. The prices were rising and the way of calculating your energy bill changed. The new rules make it way more expensive if you draw an energy peak.",
         date: "sep. 2021 - jan. 2022",
         assignment: "Find a way to keep his energy bill as low as possible, monitor his energy consumption and energy yield",
+        team:"A team of four people.",
         projectBody: [
           {
             heading: "THE PROCESS",
@@ -126,6 +132,7 @@ export const ProjectList = [
         context: "This project was made for the course Project IoT in my second year at Thomas More. We had a whole semester to work on it. One of my teachers Paul has a hobby in which he grows pumpkins as large as possible and then enters competitions with it. He has a large greenhouse of 7 m x 18.5 m where he only plants 2 pumpkins a year. In order to grow the pumpkins as large as possible he has to handle a lot of things like temperature, water, light, ... which are all quite time-consuming. Before our project, the watering and temperature wasn't measured. So in order to make his life easier and be more precise with the temperature, watering, ...",
         date: "feb. 2021 - jun. 2022",
         assignment: "Monitor and automate the greenhouse",
+        team:"A team of five people.",
         projectBody: [
           {
             heading: "THE PROCESS",
@@ -148,6 +155,7 @@ export const ProjectList = [
         context: "For the Embedded Devices Essentials course, we were asked to create an automatic lending system for laptops. At the moment, laptops can be borrowed, but someone from the secretariat must always be present to give the laptop. Because they soon want fewer computer rooms at Thomas More, they would like to make it more accessible to borrow laptops for students who cannot bring one to school.",
         date: "feb. 2021 - jun. 2022, sep. 2022 - oct. 2022",
         assignment: "Create a system so that students can borrow a laptop themselves with their student card.",
+        team:"A team of three people.",
         projectBody: [
           {
             heading: "PREPARATION",
@@ -180,6 +188,7 @@ export const ProjectList = [
         context: "My teacher Jochen Mariën had the assignment of making an enigma machine. The assignment was originally much simpler. An Arduino hooked up to a laptop with some physical buttons to do some settings. At our first meeting I proposed to mimic the enigma as closely as possible in real life with an ESP32 instead of an Arduino. My teacher thought this was a very good idea so I started working on it.",
         date: "sep. 2022 - jan. 2023",
         assignment: "Make a modern enigma machine.",
+        team:"This was a solo project.",
         projectBody: [
           {
             heading: "PERSONAL GOALS",
@@ -195,7 +204,7 @@ export const ProjectList = [
             heading: "step 2: read the switchboard",
             bodyText: "The switchboard requires 26 GPIO pins. In each case, 1 pin is set as high output and all other pins are read as inputs. Then if 1 of those inputs is high it means they are paired and are linked together in the code. After reading the switchboard, step 3 begins: reading the keyboard.",
           },{
-            heading: "step 3: reading the keyboad",
+            heading: "step 3: read the keyboard",
             bodyText: "The keyboard is a button matrix so I only need 11 GPIO pins, 4 outputs (rows) and 7 inputs (columns). By setting 1 output high each time and checking all inputs, I know by the combination of row and column which button was pressed. Each letter you press goes in the code through the switchboard, the 3 rotors, the reflector, again through the 3 rotors and finally once more through the switchboard. The encoded letter that comes out of that will light up at the LED strip. Each time a key is pressed, the right rotor turns one letter. This way if you press the same letter twice you will never get the same encoded letter back. When you have finished typing your message you can press stop message, then step 4 starts: send message if needed.",
           },{
             heading: "step 4: send message if needed",
@@ -212,26 +221,25 @@ export const ProjectList = [
         name: "chicken test farm",
         image: [
           {
-            picture: Project7,
+            picture: Project7_2,
+            pText: "testText2"
+          },
+          {
+            picture: Project7_1,
             pText: "testText1"
-          },{
-            picture: Project2,
-            pText: "testText2"
-          },{
-            picture: Project5,
-            pText: "testText2"
           }
         ],
-        context: "",
+        context: "In Antwerp there is a company that does tests with chickens. They put groups of chickens in different conditions and do a lot of measurements such as food consumption, weight of the chicken, weight of the egg, ... . So they had a lot of data in Excel files that they wanted to visualize.",
         date: "sep. 2022 - jan. 2023",
-        assignment: "",
+        assignment: "Visualize the data.",
+        team:"A team of two people.",
         projectBody: [
           {
             heading: "THE PROCESS",
-            bodyText: "process",
+            bodyText: "After looking at the data, we tried to convince them that they needed a data warehouse. We then started designing a star schema. It was clear by then that getting everything into a data warehouse and visualizing it was far too big a task for two students. The company had then enlisted external help who was going to take over after us. The external help was came at the right time for us because they also wanted to give us some guidance. We showed our star scheme to them and then, with minor adjustments, to the company. Once that was approved we started the ETL process. The process of extracting the data from the Excel files, transforming it to the format we needed it in and writing it into the data warehouse. We did this using a combination of Visual Studio with SSIS and python code. When our data warehouse was then finished, we received a crash course in powerBI from someone from the external help. We then showed the company how easily and quickly you can display graphs with a data warehouse. Then we asked them to make a list of visualizations they wanted to see. We already showed the first visualizations. The company then requested a few more tweaks that we will show them in February.",
           }],
         contribution: ["My teammate and I worked on everything together.","making a star diagram","ETL process","visualisations in powerBI"],
-        conclusion:"",
+        conclusion:"This assignment was quite a challenge for me. I knew little to nothing about data warehouses, ETL and had never worked with powerBI before. Thanks to some good teamwork, we eventually managed to create a data warehouse and visualizations with powerBI.",
       },
       {
         name: "customer loyalty system",
@@ -247,16 +255,20 @@ export const ProjectList = [
             pText: "testText2"
           }
         ],
-        context: "",
+        context: "The Big C. is a social enterprise that has developed an innovative model to effectively meet the needs of people affected by cancer or another profound illness and create social impact. In Thomas More Geel, the company has a coffee bar. One of my teammates works there and came up with the idea of creating a customer loyalty system.",
         date: "sep. 2022 - dec. 2022",
-        assignment: "",
+        assignment: "Creat a customer loyalty system.",
+        team:"A team of three people.",
         projectBody: [
           {
             heading: "THE PROCESS",
-            bodyText: "process",
+            bodyText: "We started by dividing the work, one team member was in contact with the founder of The Big C to ask her our questions. I was in charge of the physical system that can read a card and show on screens whether the customer gets something for free. Our third team member was in charge of the server side. If I did a POST request with the card's UID I had to get back whether the customer got a free consumption and if not how many consumptions they still have to buy. That team member also made sure there was a monthly report of the amount of free stuff so it could be included in the accounting.",
+          },{
+            heading:"",
+            bodyText: "To make the physical system I used an ESP32 with a TFT display, an LCD screen with I²C backpack and an RFID card reader. The RFID reader is controlled with I²C and reads the UID of the card and sends it with a POST request. The response to that includes whether there is a free consumption and how many consumptions are left before there is a free consumption. The LCD screen is information for the barista. We chose a simpler screen for the barista because only text is needed and it is cheaper. The LCD screen is controlled with I²C and shows the time of scanning and whether to give a free consumption. The TFT display is for the customer and we chose it because it can show an image but still doesn’t cost too much. It is controlled with the SPI protocol. This shows the logo of the coffee bar and when scanned whether there is a free consumption. I made sure that everything is connected with screw terminals so that if something is broken it can easily be replaced. We also made sure that the ESP32 can be powered with a USB-C cable instead of a Micro USB cable. We did this because USB-C is the new European standard and we want it to be easy to buy a new or longer cable in the future."
           }],
         contribution: ["card reader","TFT screen","LCD screen","assembly of the components with wooden frame"],
-        conclusion:"",
+        conclusion:"Stefanie Veraghtert, owner of The Big C, was very pleased with the result. She is going to use it in the future to give a free snack after several orders. That way it could be a free piece of cake one month, a free cookie the next depending on what she wants to promote. We had also created a user guide aimed at people who have not studied ICT. With this guide she can adjust how many orders someone has to make before something is free and what is shown on the screens. It was a pleasant collaboration in which each team member performed their own task well.",
       },
       {
         name: "Azure IoT",
@@ -267,11 +279,15 @@ export const ProjectList = [
           },{
             picture: Project9_1,
             pText: "testText2"
+          },{
+            picture: Project9_2,
+            pText: "testText2"
           }
         ],
         context: "",
-        date: "sep. 2022 - jan. 2023",
+        date: "jan. 2023",
         assignment: "",
+        team:"This was a solo project.",
         projectBody: [
           {
             heading: "THE PROCESS",
