@@ -33,9 +33,9 @@ function Home() {
       <div className='featuredProjects homeDiv'>
         <h2>featured projects</h2>
         <div className='projectList'>
-          <ProjectTile id={0} name={ProjectList[0].name} image={ProjectList[0].image} key={0}/>
-          <ProjectTile id={5} name={ProjectList[5].name} image={ProjectList[5].image} key={1}/>
-          <ProjectTile id={6} name={ProjectList[6].name} image={ProjectList[6].image} key={1}/>
+          <ProjectTile id={0} name={ProjectList[0].name} image={ProjectList[0].image[0].picture} key={0}/>
+          <ProjectTile id={5} name={ProjectList[5].name} image={ProjectList[5].image[0].picture} key={1}/>
+          <ProjectTile id={6} name={ProjectList[6].name} image={ProjectList[6].image[0].picture} key={1}/>
       </div>
       </div>
 
