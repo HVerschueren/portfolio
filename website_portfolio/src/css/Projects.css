@@ -20,6 +20,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
   }
+  h1{
+    margin: 30px 0px;
+  }
   
   /* MENU ITEM STYLING */
   
