@@ -27,7 +27,7 @@ function Home() {
   return (
     <div className='homePage'>
       <div className='introduction homeDiv'>
-        <p>Welcome on mij portfolio website! My name is <b>Hanne Verschueren</b>, I'm {_calculateAge('1999-12-31')} years old and currently studying Electronics-ICT at Thomase More. Check out my projects or downlaod my cv in the footer.</p>
+        <p>Welcome on mij portfolio website! My name is <b>Hanne Verschueren</b>, I'm {_calculateAge('1999-12-31')} years old and currently studying Electronics-ICT at Thomase More. Check out my projects or my CV.</p>
       </div>
 
       <div className='featuredProjects homeDiv'>
