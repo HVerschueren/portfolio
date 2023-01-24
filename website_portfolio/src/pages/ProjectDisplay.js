@@ -49,6 +49,7 @@ function ProjectDisplay() {
         <p>{project.context}</p>
         <br></br>
         <p>Assignment: {project.assignment}</p>
+        <p>{project.team}</p>
       </div>
       <div>
         {project.projectBody.map((i) => {
