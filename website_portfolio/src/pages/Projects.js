@@ -9,7 +9,7 @@ function Projects() {
       <h1>my projects</h1>
       <div className='projectList'>
         {ProjectList.map((project, index) => {//gaat door de array in ProjectList en slaat de variablen op in project
-          return <ProjectTile id={index} name={project.name} image={project.image} key={index}/>
+          return <ProjectTile id={index} name={project.name} image={project.image[0].picture} key={index}/>
         })}
 
       </div>

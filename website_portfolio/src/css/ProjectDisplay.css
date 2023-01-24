@@ -1,3 +1,4 @@
+
 .project {
     width: 100%;
     /* height: calc(100vh - 100px); */
@@ -32,11 +33,21 @@
   .project p {
     font-size: 1rem;
     max-width: 1000px;
+    padding: 15px;
   }
   
   .project svg {
     font-size: 60px;
     color: #13a89e;
+  }
+  .carouselDiv{
+    display: none;
+  }
+  .smallScreenImage{
+    display: block;
+  }
+  .contextDiv{
+    margin-top: 30px;
   }
 
   @media only screen and (min-width: 600px){
@@ -44,13 +55,23 @@
       height:auto;
       width: 600px;
     }
-
+    .carouselDiv{
+      display: block;
+    }
+    .smallScreenImage{
+      display: none;
+    }
+  
+    
   }
 
   @media only screen and (min-width: 1000px){
     .imageDiv{
       height:auto;
       width: 800px;
+    }
+    p{
+      margin: 0px 150px;
     }
 
   }
