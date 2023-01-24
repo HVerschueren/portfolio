@@ -19,7 +19,7 @@ export const TimelineList = [
         color:"rgb(168,158,19)",
       },
       {
-        date: "2020-2023",
+        date: "2020-now",
         title: "Thomas More Hogeschool",
         place: "Geel, Belgium",
         explanation:"Bachelors degree in Elektronics-ICT. Digital Innovation/IoT",
