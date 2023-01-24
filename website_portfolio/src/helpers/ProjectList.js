@@ -100,7 +100,7 @@ export const ProjectList = [
         ],
         context: "This project was made for the course Systems Engineering & Analysis in my second year at Thomas More. We had a whole semester to work on it. Around the date of the project a lot of things were changing considering energy in Belgium. The prices were rising and the way of calculating your energy bill changed. The new rules make it way more expensive if you draw an energy peak.",
         date: "sep. 2021 - jan. 2022",
-        assignment: "Find a way to keep his energy bill as low as possible, monitor his energy consumption and energy yield",
+        assignment: "Find a way to keep his energy bill as low as possible, monitor his energy consumption and energy yield.",
         team:"A team of four people.",
         projectBody: [
           {
@@ -284,17 +284,20 @@ export const ProjectList = [
             pText: "testText2"
           }
         ],
-        context: "",
+        context: "This was a smaller project in which I had to prove that I can set up a PaaS IoT cloud architecture. PaaS stands for platform as a service, and the platform I used was Microsoft Azure. At my father's house there is a central system that operates the lights and stores the energy consumption. You can read this with the MODBUS TCP/IP protocol. I used the Microsoft Azure platform to make sure that the average quarter-hourly energy consumption was put into a database every quarter-hour and made sure that lights could be controlled from a website.",
         date: "jan. 2023",
-        assignment: "",
+        assignment: "Use Microsoft Azure to visualize energy consumption and get a view of what the capacity charge would mean. Control the light from a website.",
         team:"This was a solo project.",
         projectBody: [
           {
-            heading: "THE PROCESS",
-            bodyText: "process",
+            heading: "HOW IT WORKS",
+            bodyText: "I am using a Raspberry Pi 4 that is running a python script to read the registers with MODBUS. I read out 3 that contain the consumption per phase. After keeping track of these for 15 minutes, I take the average and send it to Azure's IoT hub. There the consumption ends up in a temporary buffer that keeps track of it for 1 day with the free version. With Stream Analytics from Azure, I can set the IoT hub as input and choose a database as output.  Cosmos DB is a cloud database from Azure, I use it as output. Stream Analytics can also do some operations on the input data but I just select what I need and send it to Cosmos DB. After I had the consumption of a few hours in the database I could visualize it. For this I chose powerBI, a visualization tool from Microsoft. Because I had stored the data NoSQL in the database it had to be transformed in powerBI first. After this was succeeded I could just make a graph of it.",
+          },{
+            heading:"",
+            bodyText:'The lights also needed to be controllable. For this I have a website on the Apache 2 of my Raspberry Pi. If you click on a lamp there, it is forwarded via the API of my Azure account to the IoT hub. That then sends a direct message to my Raspberry PI. The script that sends the average consumption every 15 minutes also contains a listener that listens for the direct message "toggleLight". When that sees the direct message it looks to see what number was in the payload and puts a 1 with MODBUS in the register with that number. My father had built his system so that if a 1 came into a lamp register, that lamp changed state.'
           }],
-        contribution: ["PCB","IO expander"],
-        conclusion:"",
+        contribution: ["solo project"],
+        conclusion:"Working with a platform like Azure was new. I found it very convenient that everything you need sits together and is well coordinated. It was not an extensive project but I am glad I worked with it once.",
       },
 
 ];
