@@ -11,7 +11,7 @@ function Footer() {
         <div className='IconLinks'>
             <a href='https://www.linkedin.com/in/hanne-verschueren-5683b2248/'><LinkedInIcon/></a>
             <a href='https://github.com/HVerschueren'><GitHubIcon/></a>
-            <a href='mailto:testEmail.com'><EmailIcon/></a>
+            <a href='mailto:r0842391@student.thomasmore.be'><EmailIcon/></a>
         </div>
         {/* <p>&copy;2023 hanne.sinners.be</p> */}
     </div>

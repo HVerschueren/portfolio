@@ -53,6 +53,13 @@
   .contextDiv{
     margin-top: 30px;
   }
+  body{
+    text-align: center;
+  }
+
+  ul{
+    text-align: left;
+  }
 
   @media only screen and (min-width: 600px){
     .imageDiv{
@@ -65,7 +72,7 @@
     .smallScreenImage{
       display: none;
     }
-  
+      
     
   }
 
