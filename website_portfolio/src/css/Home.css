@@ -1,6 +1,9 @@
 .homeDiv{
     margin: 50px 50px;
 }
+.timeline{
+  text-align: left;
+}
 @media only screen and (min-width: 1000px){
 
     p{
