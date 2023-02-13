@@ -10,10 +10,10 @@ function Footer() {
     <div className='footer'>
         <div className='IconLinks'>
             <a href='https://www.linkedin.com/in/hanne-verschueren-5683b2248/'><LinkedInIcon/></a>
-            <a href='https://github.com/HVerschueren'><GitHubIcon/></a>
-            <a href='mailto:r0842391@student.thomasmore.be'><EmailIcon/></a>
+            {/* <a href='https://github.com/HVerschueren'><GitHubIcon/></a> */}
+            <a href='mailto:verschuerenhanne1@gmail.com'><EmailIcon/></a>
         </div>
-        {/* <p>&copy;2023 hanne.sinners.be</p> */}
+        <p>&copy;2023 hanneverschueren.com</p>
     </div>
   )
 }
