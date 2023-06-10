@@ -26,8 +26,10 @@ function Navbar() {
         </div>
         <div className='links'>
             <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/CV">CV</Link>
+            <Link to="/OverMezelf">over mij</Link>
+            <Link to="/Projecten">projecten</Link>
+            <Link to="/Stage">stage</Link>
+            
         </div>
         </div>
   )

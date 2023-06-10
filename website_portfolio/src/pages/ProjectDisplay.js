@@ -48,16 +48,16 @@ function ProjectDisplay() {
         <h2>CONTEXT</h2>
         <p>{project.context}</p>
         <br></br>
-        <p>Assignment: {project.assignment}</p>
+        <p>Opdracht: {project.assignment}</p>
         <p>{project.team}</p>
       </div>
       <div>
         {project.projectBody.map((i) => {
-              return <div><h2>{i.heading}</h2> <p>{i.bodyText}</p></div>
+              return <div><h2>{i.heading}</h2> <h3>{i.smallHeading}</h3> <p>{i.bodyText}</p></div>
             })}
       </div>
       <div>
-        <h2>MY CONTRIBUTION</h2>
+        <h2>MIJN BIJDRAGE</h2>
         <ul>
           {project.contribution.map((i) => {
               return <li>{i}</li>
@@ -65,7 +65,7 @@ function ProjectDisplay() {
         </ul>
       </div>
       <div>
-        <h2>CONCLUSION</h2>
+        <h2>CONCLUSIE</h2>
         <p>{project.conclusion}</p>
       </div>
     </div>

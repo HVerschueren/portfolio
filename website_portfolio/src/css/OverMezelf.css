@@ -1,0 +1,29 @@
+.overMezelfDiv{
+    margin: 50px 50px;
+}
+img{
+    max-width: 250px;
+    border-radius: 50%;
+    border: 3px solid #13a89e;
+}
+.referenceLinks a svg{
+    color: #13a89e;
+    margin-right: 10px;
+    font-size: 50px;
+}
+.cvButton{
+    font-size: 40px;
+    padding: 0px;
+    color:#13a89e;
+}
+
+.referenceLinks a svg:hover, .referenceLinks a:hover{
+    color: rgb(168,158,19);
+}
+p{
+    margin: 0px !important;
+}
+h3{
+    margin-top: 10px;
+    color: #13a89e;
+}
