@@ -27,16 +27,16 @@ function Home() {
   return (
     <div className='homePage'>
       <div className='introduction homeDiv'>
-        <p>Welcome on my portfolio website! My name is <b>Hanne Verschueren</b>, I'm {_calculateAge('1999-12-31')} years old and currently studying Electronics-ICT at Thomas More. Check out my projects or my CV.</p>
+        <p>Welkom op mijn portfolio website! Mijn naam is <b>Hanne Verschueren</b> en ik ben {_calculateAge('1999-12-31')} jaar. Binnenkort rond ik mijn studie Elektronica-ICT af aan Thomas More. Op deze website kun je meer te weten komen <a href='/OverMezelf'>over mij</a>, <a href='/Projecten'>mijn projecten</a> en de <a href='/Stage'>stage</a> die ik voor Thomas More deed.</p>
       </div>
 
       <div className='featuredProjects homeDiv'>
-        <h2>featured projects</h2>
+        <h2>projecten in de kijker</h2>
         <div className='projectList'>
           <ProjectTile id={0} name={ProjectList[0].name} image={ProjectList[0].image[0].picture} key={0}/>
           <ProjectTile id={5} name={ProjectList[5].name} image={ProjectList[5].image[0].picture} key={1}/>
-          <ProjectTile id={6} name={ProjectList[6].name} image={ProjectList[6].image[0].picture} key={1}/>
-      </div>
+          <ProjectTile id={11} name={ProjectList[11].name} image={ProjectList[11].image[0].picture} key={1}/>
+        </div>
       </div>
 
     

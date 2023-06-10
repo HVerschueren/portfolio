@@ -1,11 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home"
-import Projects from "./pages/Projects"
+import Projects from "./pages/Projecten"
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
 import ProjectDisplay from './pages/ProjectDisplay'
-import CV from './pages/CV'
+import OverMezelf from './pages/OverMezelf'
+import Stage from './pages/Stage'
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectDisplay />} />
-          <Route path="/CV" element={<CV />} />
+          <Route path="/overMezelf" element={<OverMezelf />} />
+          <Route path="/Projecten" element={<Projects />} />
+          <Route path="/Projecten/:id" element={<ProjectDisplay />} />
+          <Route path="/stage" element={<Stage />} />
+          
         </Routes>
         <Footer/>
       </Router>

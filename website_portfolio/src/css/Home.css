@@ -1,9 +1,25 @@
 .homeDiv{
     margin: 50px 50px;
 }
+/* .introduction{
+  text-align: center;
+  max-width: 1000px;
+} */
 .timeline{
   text-align: left;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:hover{
+  color: #13a89e;
+}
+
+
+
 @media only screen and (min-width: 1000px){
 
     p{
